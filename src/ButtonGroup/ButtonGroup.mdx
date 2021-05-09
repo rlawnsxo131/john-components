@@ -1,0 +1,56 @@
+import ButtonGroup from './ButtonGroup';
+import {
+  Story,
+  Props,
+  Description,
+  Preview,
+} from '@storybook/addon-docs/blocks';
+
+# ButtonGroup
+<Description of={ButtonGroup} />
+
+- Button Group Component: 여러개의 버튼을 묶고싶을땐 ButtonGroup 을 사용합니다.
+- Default Props
+  - `direction = 'row'`
+  - `rightAlign = false`
+  - `gap`
+  - `children`
+  - `className`
+
+<Preview>
+  <Story id="components-button-buttongroup--props" />
+</Preview>
+
+## Props
+- 순수한 flex layout 에 기반한 작동을 합니다.
+- 특별히 정의한 속성은 아래와 같습니다.
+- `children`: 안에서 보여줄 버튼들 입니다..
+- `direction`: 버튼의 정렬 방식을 결정합니다.
+- `rightAlign`  **direction** 이 **row** 일 경우 오른쪽 정렬을 지원합니다.
+  - ``column`` 과 **rightAlign** 을 함께 사용한 경우 순수한 flex 속성의 작동 방식에 따라, 어떤 사이즈의 버튼을 사용해도 꽉찬채 세로정렬이 이루어 집니다.
+  - ``column`` 을 주고 오른쪽 정렬을 하고 싶을땐 외부 ``element`` 혹은 ``className`` 을 이용한 컨트롤이 필요합니다.
+- `gap` : 2개이상 버튼이 존재할 때, 버튼간 간격을 조정합니다.
+  - `row`: margin-left
+  - `column`: margin-top
+  - `gap`: `string` | `number` 로 입력받습니다.
+    - `'1.5rem'` | `1.5`
+- `className`: 스타일 커스텀을 위해 className 을 줄 수 있습니다.
+
+<Props of={ButtonGroup} />
+
+## RightAlign
+- `direction` 이 `row` 일 경우 우측 정렬이 됩니다.
+- default 값은 `row` 입니다.
+- `gap` props 를 통해 버튼간 간격을 조절할 수 있습니다.
+
+<Preview>
+  <Story id="components-button-buttongroup--right-align" />
+</Preview>
+
+## Column
+- `direction` 이 `column` 일 경우 수직정렬이 됩니다.
+- 특별한 처리가 없는이상 `flex: direction` 의 동작방식과 같이 세로정렬과 동시에 하나의 블록을 모두 차지합니다.
+
+<Preview>
+  <Story id="components-button-buttongroup--column"/>
+</Preview>

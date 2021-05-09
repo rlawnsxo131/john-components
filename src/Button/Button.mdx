@@ -1,0 +1,63 @@
+import Button from './Button';
+import {
+  Story,
+  Props,
+  Description,
+  Preview,
+} from '@storybook/addon-docs/blocks';
+
+
+# Button
+<Description of={Button} />
+
+- Default Button Component
+- Default Props
+  - `children`
+  - `color = 'gray'`
+  - `size = 'medium'`
+  - `shape = 'rect'`
+  - `outline = false`
+  - `...rest`
+
+<Preview>
+  <Story id="components-button-button--props" />
+</Preview>
+
+## Props
+- 특별히 정의한 일부 속성을 포함한 모든 **React ButtonElement** 의 **property** 를 props 로 받습니다.
+- 특별히 정의한 속성은 아래와 같습니다.
+- `children`: 버튼의 내용을 결정합니다.
+- `color`: 버튼의 색상을 결정합니다.
+- `size` : 버튼의 크기를 결정합니다.
+- `shape`: 버튼의 모양을 결정합니다.
+- `outline`: 버튼의 색상 채움 여부를 결정합니다.
+<Props of={Button} />
+
+## Shape
+- `shape` 값에 따라 버튼의 모양이 달라집니다.
+- default 값은 `rect` 입니다.
+
+<Preview>
+  <Story id="components-button-button--shape" />
+</Preview>
+
+## State
+- `disabled` 값에따라 버튼의 활성상태가 변경됩니다.
+
+<Preview>
+  <Story id="components-button-button--state" />
+</Preview>
+
+## Size
+- `small`, `medium`, `large` 사이즈 와 반응형 `responsive` 사이즈로 나뉩니다.
+
+<Preview>
+  <Story id="components-button-button--size" />
+</Preview>
+
+## Preview
+- 전체 버튼의 모양은 아래와 같습니다.
+
+<Preview>
+  <Story id="components-button-button--preview" />
+</Preview>
