@@ -66,27 +66,26 @@ const block = (
   border-radius: 4px;
   border: 1px solid ${buttonColorMap[color].background};
 
-  &:not(:disabled) {
-    ${outline &&
-    css`
-      color: ${buttonColorMap[color].background};
-      background: ${outlineButtonStyle.background};
-      &:hover {
-        color: ${buttonColorMap[color].hoverBackground};
-        border: 1px solid ${buttonColorMap[color].hoverBackground};
-        opacity: ${outlineButtonStyle.opacity};
-      }
-    `}
-    ${!outline &&
-    css`
-      color: ${palette.white};
-      background: ${buttonColorMap[color].background};
-      &:hover {
-        background: ${buttonColorMap[color].hoverBackground};
-        border: 1px solid ${buttonColorMap[color].hoverBackground};
-      }
-    `}
-  }
+  ${outline &&
+  css`
+    color: ${buttonColorMap[color].background};
+    background: ${outlineButtonStyle.background};
+    &:hover {
+      color: ${buttonColorMap[color].hoverBackground};
+      border: 1px solid ${buttonColorMap[color].hoverBackground};
+      opacity: ${outlineButtonStyle.opacity};
+    }
+  `}
+  ${!outline &&
+  css`
+    color: ${palette.white};
+    background: ${buttonColorMap[color].background};
+    &:hover {
+      background: ${buttonColorMap[color].hoverBackground};
+      border: 1px solid ${buttonColorMap[color].hoverBackground};
+    }
+  `}
+  
 
   &:disabled {
     cursor: not-allowed;
