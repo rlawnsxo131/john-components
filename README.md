@@ -8,6 +8,7 @@ React + @emotion 을 이용해 만든 Component 들 입니다.
 - TODO
     - library 버전 올리기
     - rollup 외의 번들러 한번 알아보기
+    - Test Code 공부좀 더하고 붙이기
 
 # Local Test
 ```shell
