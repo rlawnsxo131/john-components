@@ -18,7 +18,7 @@ $ yarn
 # preview
 $ yarn storybook # start development
 $ yarn build:storybook # build storybook
-$ yarn build:roolup # build components with rollup
+$ yarn build:rollup # build components with rollup
 ```
 
 # Open Color
