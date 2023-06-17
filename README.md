@@ -1,13 +1,6 @@
 ```
 React + @emotion 을 이용해 만든 Component 들 입니다.
-요즘 진행이 더디긴 하지만 조만간 완성후 npm 에서 만날수 있도록 하겠습니다.
 ```
-
-- 곧 다시 작업시작합니다.
-- TODO
-    - library 버전 올리기
-    - rollup 외의 번들러 한번 알아보기
-    - Test Code 붙이기
 
 # Local Test
 ```shell
